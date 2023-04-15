@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import ctypes
 
@@ -75,6 +76,7 @@ def when_pressed(event1, event2):
 
 if __name__ == '__main__':
     timer = 0
+    sys.setrecursionlimit(10000) # without it the code crashes
     with mp.Manager() as manager:
         event1 = manager.Event()
         event2 = manager.Event()

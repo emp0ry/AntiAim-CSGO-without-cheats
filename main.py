@@ -15,8 +15,8 @@ except: os.system("pip install pynput"); from pynput import keyboard as kb
 try: import multiprocessing as mp
 except:  os.system("pip install multiprocess"); import multiprocessing as mp
 
-BIND1 = kb.Key.f4 # for turn on or turn off script
-BIND2 = kb.Key.f3 # for change angle of antiaim
+BIND1 = kb.Key.f1 # for turn on or turn off script
+BIND2 = kb.Key.f2 # for change angle of antiaim
 
 # detect if you in csgo
 def in_csgo():

@@ -52,8 +52,6 @@ def on_press(key, event1, event2):
                     print('right angle')
                     event2.set()
                 timer = time.time()
-            
-        
     except AttributeError:
         pass
 
